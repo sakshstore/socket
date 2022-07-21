@@ -18,7 +18,7 @@ app.get('/reload', (req, res) => {
  
 const io = require("socket.io")(http, {
   cors: {
-    origin: "*",
+    origin: "http://blogentry.in",
     methods: ["GET", "POST"],
 	   credentials: false
   }
