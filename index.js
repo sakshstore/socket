@@ -21,7 +21,7 @@ app.get('/reload', (req, res) => {
 const io = require("socket.io")(http, {
 	 allowEIO3: true ,
   cors: {
-    origin: "//blogentry.in",
+    origin: "https://blogentry.in",
     methods: ["GET", "POST"],
 	   credentials: true,
 	  
