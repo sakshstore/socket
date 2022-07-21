@@ -4,7 +4,7 @@ const http = require('http').Server(app);
 const port = process.env.PORT || 8080;
 
  
-const domains=['blogentry.in'];
+const domains=['https://blogentry.in'];
 
 
 
