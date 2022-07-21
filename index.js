@@ -4,6 +4,8 @@ const http = require('http').Server(app);
 const port = process.env.PORT || 8080;
 
  
+const domains=['blogentry.in'];
+
 
 
 
@@ -19,7 +21,7 @@ app.get('/reload', (req, res) => {
 const io = require("socket.io")(http, {
 	 allowEIO3: true ,
   cors: {
-    origin: "*",
+    origin: domains,
     methods: ["GET", "POST"],
 	   credentials: true,
 	  
