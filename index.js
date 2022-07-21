@@ -28,6 +28,9 @@ const io = require("socket.io")(http, {
   }
 });
 
+io.set('origins',  "https://blogentry.in");
+
+
 io.on('connection', (socket) => {
  
  
