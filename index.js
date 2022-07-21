@@ -17,10 +17,12 @@ app.get('/reload', (req, res) => {
 
  
 const io = require("socket.io")(http, {
+	 allowEIO3: true ,
   cors: {
     origin: "http://blogentry.in",
     methods: ["GET", "POST"],
-	   credentials: true
+	   credentials: true,
+	  
   }
 });
 
