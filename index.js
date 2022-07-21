@@ -21,14 +21,14 @@ app.get('/reload', (req, res) => {
 const io = require("socket.io")(http, {
 	 allowEIO3: true ,
   cors: {
-    origin: "https://blogentry.in",
+    
     methods: ["GET", "POST"],
 	   credentials: true,
 	  
   }
 });
 
-//io.set('origins',  "https://blogentry.in");
+ io.set('origins',  "https://blogentry.in");
 
 
 io.on('connection', (socket) => {
